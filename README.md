@@ -11,3 +11,6 @@
 2.  Dos
 3.  Tres
 4.  Cuatro
+**negrita**
+_Italika texto_
+**negrita _Italika**
