@@ -13,5 +13,6 @@
 4.  Cuatro
 
 **negrita**
-**_Italika texto_**
-**negrita _Italika**
+_Italika texto_
+***negrita _Italika***
+
