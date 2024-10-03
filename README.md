@@ -16,4 +16,4 @@
 _Italika texto_
 ***negrita _Italika***
 
-!{}(https://static.nationalgeographicla.com/files/styles/image_3200/public/nationalgeographic_1468962.jpg?w=1900&h=1400)
+![Imagen Gato](https://static.nationalgeographicla.com/files/styles/image_3200/public/nationalgeographic_1468962.jpg?w=1900&h=1400)
