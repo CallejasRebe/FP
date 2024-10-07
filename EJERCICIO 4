@@ -15,9 +15,53 @@ int main()
     getline(cin, nombreCompleto); // Oobtiene una línea completa de texto (string)
     cout << "Rebeca Eunice Callejas Aguirre" << nombreCompleto << endl;
 
+    //EJERCICIO 5
     // De que tamaño es un string
     cout << "La longitud del texto es: " << nombreCompleto.length () << endl;
 
+    //EJERCICIO 6
     // Como acceder un carácter específico de un texto (string)
     cout << "El primer caracter de nombre completo es: " << nombreCompleto[0] << endl;
+
+    // EJERCICIO 7
+    // Cambirar un carácter específico de un texto 
+    string cambio = "Hola";
+    cambio[0] = 'h';
+    cout << cambio << endl;
+
+    // EJERCICIO 8
+    // Convertir un string a MAYÚSCULAS
+    string textoMinusculas = "texto a convertir";
+    transform(textoMinusculas.begin(), textoMinusculas.end(), textoMinusculas.begin(), toupper);
+    cout << "Texto en MAYUSCULAS" << textoMinusculas << endl;
+
+   // EJERCICIO 9
+   // Convertir un string a minusculas
+    string textoMayusculas = "TEXTO A CONVERTIR";
+    transform(textoMayusculas.begin(), textoMayusculas.end(), textoMayusculas.begin(), toupper);
+    cout << "Texto en minusculas" << textoMayusculas << endl;
+
+    // EJERCICIO 10 
+    // Insertar un texto dentro de otro texto 
+    string textoPrincipal = "Rebe, ";
+    textoPrincipal.insert(6, "Rebe");
+    cout << "Insertar Texto dentro de otro" << textoPrincipal << endl;
+
+    //EJERCICIO 11 
+    //Revertir un texto
+    string textoRevertir = "Hola Mundo!";
+    reverse(textoRevertir.begin(), textoRevertir.end());
+    cout << "Texto revertido: " << textoRevertir << endl;
+
+    // EJERCICIO 12 
+    //Convertir un numero a string 
+    int n1 = 123;
+    string numeroAtexto = to_string(n1);
+    cout << "Numero com string " << numeroAtexto << endl;
+
+    // EJERCICIO 13 
+    // Convertir un string a numero 
+    string textoAnumero = "123";
+    int n2 = stoi(textoAnumero);
+    cout << "String como numero" << n2 << endl;
 }
