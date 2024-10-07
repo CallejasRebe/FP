@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+   //EJERCICIO 4
+   // //Introducir una línea completa de texto
+    cin.ignore(); //Iignora la intrucción cin 
+    string nombreCompleto;
+    cout << "Rebeca Eunice Callejas Aguirre";
+    getline(cin, nombreCompleto); // Oobtiene una línea completa de texto (string)
+    cout << "Rebeca Eunice Callejas Aguirre" << nombreCompleto << endl;
+
+    // De que tamaño es un string
+    cout << "La longitud del texto es: " << nombreCompleto.length () << endl;
+
+    // Como acceder un carácter específico de un texto (string)
+    cout << "El primer caracter de nombre completo es: " << nombreCompleto[0] << endl;
+}
