@@ -1,0 +1,41 @@
+#include <iostream>
+#include <limits>
+#include <iomanip>
+#include <locale>
+using namespace std;
+int main()
+{
+	//OPERACIONES ARITMETICAS
+	// ENTEROS
+
+	int n1 = 10;
+	int n2 = 20;
+	int n3;
+
+	//float
+	float f1 = 1.5;
+	float f2 = 5.2;
+	float f3;
+	// 1.Adición 
+	n3 = n1 + n2;
+	cout << "Resultado suma enteros" << n3 << endl;
+	f3 = f1 + f2;
+	cout << "Resultado suma flotantes" << f3 << endl;
+
+	// 2.Sustracción 
+	n3 = n1 - n2;
+	cout << "Resultado resta de enteros" << n3 << endl,
+		f3 = f1 - f2;
+	cout << "Resultado resta flotantes" << f3 << endl;
+
+	// 3.Multiplicación 
+	n3 = n1 * n2;
+	cout << "Resultado multiplicación de enteros" << n3 << endl;
+	f3 = f1 * f2;
+	cout << "Resultado de multiplicación flotantes" << f3 << endl;
+
+	// 4. División 
+	n3 = n2 / n1;
+	cout << "Resultado de división de enteros" << n3 << endl;
+
+}
