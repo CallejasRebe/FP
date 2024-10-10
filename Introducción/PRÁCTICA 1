@@ -1,0 +1,60 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    // 1.1 Declarar una variable tipo int que tenga el número de materias
+    int numMaterias = 7;
+
+    // 1.2 Declarar una variable tipo int que guarde el valor del cuatrimestre
+    int cuatrimestre = 4;
+
+    // 1.3 Declarar una variable tipo string para el nombre de la materia
+    std::string materia = "FUNDAMENTOS DE PROGRAMACIÓN";
+
+    // 1.4 Declarar una variable tipo string para el número de cuenta
+    std::string cuenta = "335017661";
+
+    // 1.5 Declarar una variable tipo string para el nombre propio
+    std::string nombre = "Rebeca Eunice";
+
+    // 1.7 Declarar una variable tipo string para el apellido paterno
+    std::string apellidoPaterno = "Callejas";
+
+    // 1.12 Declarar una variable tipo string para el apellido materno
+    std::string apellidoMaterno = "Aguirre";
+
+    // 1.8 Declarar una variable tipo long para el número de celular
+    long celular = 5610249195;
+
+    // 1.9 Declarar una variable tipo long para el número de casa
+    long casa = 9;
+
+    // 1.9 Declarar una variable tipo string para el correo electrónico más usado
+    std::string correoQueMasUso = "reberock.08@gmail.com";
+
+    // 1.10 Declarar una variable tipo string para el correo del Unitec
+    std::string correMyUnitec = "rebeca.callejas35@my.unitec.edu.mx";
+
+    // 1.11 Declarar una variable tipo string para la carrera
+    std::string carrera = "Animación";
+
+    // 1.12 Declarar una variable tipo bool para indicar si has usado Blackboard
+    bool blackboard = true; // true si lo has usado, false si no
+
+    // Imprimir las variables para verificar
+    std::cout << "Número de materias: " << numMaterias << std::endl;
+    std::cout << "Cuatrimestre: " << cuatrimestre << std::endl;
+    std::cout << "Materia: " << materia << std::endl;
+    std::cout << "Número de cuenta: " << cuenta << std::endl;
+    std::cout << "Nombre: " << nombre << std::endl;
+    std::cout << "Apellido Paterno: " << apellidoPaterno << std::endl;
+    std::cout << "Apellido Materno: " << apellidoMaterno << std::endl;
+    std::cout << "Celular: " << celular << std::endl;
+    std::cout << "Casa: " << casa << std::endl;
+    std::cout << "Correo que más uso: " << correoQueMasUso << std::endl;
+    std::cout << "Correo Unitec: " << correMyUnitec << std::endl;
+    std::cout << "Carrera: " << carrera << std::endl;
+    std::cout << "¿Has usado Blackboard?: " << (blackboard ? "Sí" : "No") << std::endl;
+
+    return 0;
+}
