@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+int main ()
+{
+	int num = 10;
+	cout << "Dame un valor";
+	cin >> num;
+	if (num % 2 == 0)
+		
+	{ 
+		cout << "par" << endl;
+	}
+	else //else no lleva condicion
+	{
+		cout << "impar" << endl;
+	}
+}
