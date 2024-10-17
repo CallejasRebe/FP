@@ -1,0 +1,128 @@
+#include <iostream>
+#include <cmath> // Para usar pow en el cálculo de potencias
+using namespace std;
+
+// Función para el ejercicio 1.1
+void operacionesMatematicas() {
+    int resultado;
+
+    resultado = 3 + 5 * 2 / 2 - 1;
+    cout << "Resultado de 3 + 5 * 2 / 2 - 1: " << resultado << endl;
+
+    resultado = 3 + 10 / 2 - 1;
+    cout << "Resultado de 3 + 10 / 2 - 1: " << resultado << endl;
+
+    resultado = 3 + 5 - 1;
+    cout << "Resultado de 3 + 5 - 1: " << resultado << endl;
+
+    resultado = 8 - 1;
+    cout << "Resultado de 8 - 1: " << resultado << endl;
+
+    resultado = 1 / 3 * 3;
+    cout << "Resultado de 1 / 3 * 3: " << resultado << endl;
+}
+
+// Función para el ejercicio 1.2
+void potenciaNumero() {
+    int numero;
+
+    cout << "Ingrese un numero: ";
+    cin >> numero;
+
+    int potencia = numero * numero;
+    cout << "La potencia de " << numero << " es " << potencia << endl;
+}
+
+// Función para el ejercicio 1.3
+void conversionYardas() {
+    float yardas;
+
+    cout << "Ingrese las yardas: ";
+    cin >> yardas;
+
+    float metros = yardas * 0.9144;
+    cout << "Numero en metros: " << metros << endl;
+}
+
+// Función para el ejercicio 1.4
+void depreciacionAuto() {
+    float valor_auto = 200000;
+    float valor_depreciable = valor_auto * 0.80;
+    float depreciacion_anual = valor_depreciable / 5;
+
+    for (int i = 1; i <= 5; i++) {
+        cout << "Valor de depreciacion en el año " << i << ": " << depreciacion_anual << endl;
+    }
+}
+
+// Función para el ejercicio 1.5
+void deduccionImpuestos() {
+    float salario = 25000;
+    float deduccion_fija = 900;
+    float deduccion_porcentual = (salario - deduccion_fija) * 0.015;
+    float impuesto_total = deduccion_fija + deduccion_porcentual;
+    float salario_neto = salario - impuesto_total;
+
+    cout << "Impuesto total a deducir: " << impuesto_total << endl;
+    cout << "Sueldo neto: " << salario_neto << endl;
+}
+
+// Función para el ejercicio 1.6
+void operacionesAdicionales() {
+    cout << "Resultado de 3*4: " << 3 * 4 << endl;
+    cout << "Resultado de 12/3: " << 12 / 3 << endl;
+    cout << "Resultado de 12%3: " << 12 % 3 << endl;
+    cout << "Resultado de 12%7: " << 12 % 7 << endl;
+    cout << "Resultado de 3 + 3.0: " << 3 + 3.0 << endl;
+    cout << "Resultado de 10/100: " << 10 / 100 << endl;
+    cout << "Potencia de 3^2: " << pow(3, 2) << endl;
+}
+
+// Función para el ejercicio 1.7
+void comparaciones() {
+    int a = 10, b = 20;
+
+    cout << "(a > b): " << (a > b) << endl;
+    cout << "(a < b): " << (a < b) << endl;
+    cout << "(a == b): " << (a == b) << endl;
+    cout << "(a != b): " << (a != b) << endl;
+    cout << "(a + b) > 100: " << ((a + b) > 100) << endl;
+    cout << "(a - b) == 0: " << ((a - b) == 0) << endl;
+    cout << "(a * b) > 500: " << ((a * b) > 500) << endl;
+    cout << "(a * b) < 100: " << ((a * b) < 100) << endl;
+    cout << "(a - b) < 0: " << ((a - b) < 0) << endl;
+    cout << "a < 20: " << (a < 20) << endl;
+}
+
+int main() {
+    // Llamadas a las funciones según el ejercicio
+    cout << "Ejercicio 1.1" << endl;
+    operacionesMatematicas();
+    cout << endl;
+
+    cout << "Ejercicio 1.2" << endl;
+    potenciaNumero();
+    cout << endl;
+
+    cout << "Ejercicio 1.3" << endl;
+    conversionYardas();
+    cout << endl;
+
+    cout << "Ejercicio 1.4" << endl;
+    depreciacionAuto();
+    cout << endl;
+
+    cout << "Ejercicio 1.5" << endl;
+    deduccionImpuestos();
+    cout << endl;
+
+    cout << "Ejercicio 1.6" << endl;
+    operacionesAdicionales();
+    cout << endl;
+
+    cout << "Ejercicio 1.7" << endl;
+    comparaciones();
+    cout << endl;
+
+    return 0;
+}
