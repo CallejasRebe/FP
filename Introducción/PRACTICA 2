@@ -8,5 +8,53 @@ int main() {
     cout << "Resultado 4: " << 8 - 1 << endl;
     cout << "Resultado 5: " << 1.0 / 3 * 3 << endl;
 
+ // 1.2 Potencia de un número
+    int num;
+    cout << "\nIngrese un número: ";
+    cin >> num;
+    cout << "La potencia de " << num << " es " << pow(num, 2) << endl;
+
+    // 1.3 Conversión de yardas a metros
+    float yardas;
+    cout << "\nIngrese las yardas: ";
+    cin >> yardas;
+    cout << "Número en metros: " << yardas * 0.9144 << endl;
+
+    // 1.4 Depreciación de un auto
+    float valor = 200000, depreciacion = valor * 0.8 / 5;
+    cout << "\nDepreciación por año:\n";
+    for(int i = 1; i <= 5; i++) {
+        cout << "Año " << i << ": " << depreciacion << " pesos" << endl;
+    }
+
+    // 1.5 Deducción de impuestos
+    float salario = 25000;
+    float impuesto = 900 + (salario - 900) * 0.015;
+    float sueldo_neto = salario - impuesto;
+    cout << "\nImpuesto a deducir: " << impuesto << endl;
+    cout << "Sueldo neto: " << sueldo_neto << endl;
+
+    // 1.6 Operaciones variadas
+    cout << "\n3 * 4: " << 3 * 4 << endl;
+    cout << "12 / 3: " << 12 / 3 << endl;
+    cout << "12 % 3: " << 12 % 3 << endl;
+    cout << "12 % 7: " << 12 % 7 << endl;
+    cout << "3 + 3.0: " << 3 + 3.0 << endl;
+    cout << "10 / 100: " << 10 / 100.0 << endl;
+    cout << "3^2: " << pow(3, 2) << endl;
+
+    // 1.7 Comparaciones
+    int a = 10, b = 20;
+    cout << "\n(a > b): " << (a > b) << endl;
+    cout << "(a < b): " << (a < b) << endl;
+    cout << "(a == b): " << (a == b) << endl;
+    cout << "(a != b): " << (a != b) << endl;
+    cout << "(a + b > 100): " << (a + b > 100) << endl;
+    cout << "(a - b == 0): " << (a - b == 0) << endl;
+    cout << "(a * b > 500): " << (a * b > 500) << endl;
+    cout << "(a * b < 100): " << (a * b < 100) << endl;
+    cout << "(a - b < 0): " << (a - b < 0) << endl;
+    cout << "(a < 20): " << (a < 20) << endl;
+
     return 0;
 }
