@@ -1,147 +1,6 @@
 #include <iostream>
 using namespace std;
 
-void ejercicio1_16() {
-    int A, B, C;
-    cout << "Ejercicio 1.16: Ingrese tres numeros (A, B, C): ";
-    cin >> A >> B >> C;
-
-    int mayor = A;
-    if (B > mayor) {
-        mayor = B;
-    }
-    if (C > mayor) {
-        mayor = C;
-    }
-
-    cout << "El numero mayor es: " << mayor << endl;
-}
-
-void ejercicio1_17() {
-    int A, B, C;
-    cout << "Ejercicio 1.17: Ingrese tres numeros diferentes (A, B, C): ";
-    cin >> A >> B >> C;
-
-    int maximo = A;
-    int minimo = A;
-
-    if (B > maximo) {
-        maximo = B;
-    }
-    if (C > maximo) {
-        maximo = C;
-    }
-
-    if (B < minimo) {
-        minimo = B;
-    }
-    if (C < minimo) {
-        minimo = C;
-    }
-
-    cout << "El numero maximo es: " << maximo << endl;
-    cout << "El numero minimo es: " << minimo << endl;
-}
-
-void ejercicio1_18() {
-    int HH, MM, SS;
-    cout << "Ejercicio 1.18: Ingrese la hora (HH MM SS): ";
-    cin >> HH >> MM >> SS;
-
-    SS++;
-    if (SS == 60) {
-        SS = 0;
-        MM++;
-    }
-    if (MM == 60) {
-        MM = 0;
-        HH++;
-    }
-    if (HH == 24) {
-        HH = 0;
-    }
-
-    cout << "La hora dentro de un segundo es: " << HH << ":" << MM << ":" << SS << endl;
-}
-
-void ejercicio1_19() {
-    float distancia;
-    int dias;
-    cout << "Ejercicio 1.19: Ingrese la distancia (km) y el numero de dias: ";
-    cin >> distancia >> dias;
-
-    float precio = distancia * 2.5;
-    if (dias > 7 && distancia > 800) {
-        precio *= 0.7; // aplicar reducción del 30%
-    }
-
-    cout << "El precio del boleto es: $" << precio << endl;
-}
-
-void ejercicio1_20_a() {
-    int angulo;
-    cout << "Ejercicio 1.20.a: Ingrese un angulo: ";
-    cin >> angulo;
-
-    if (angulo == 90) {
-        cout << "El ángulo es un ángulo recto" << endl;
-    } else {
-        cout << "El ángulo no es un ángulo recto" << endl;
-    }
-}
-
-void ejercicio1_20_b() {
-    int temperatura;
-    cout << "Ejercicio 1.20.b: Ingrese la temperatura: ";
-    cin >> temperatura;
-
-    if (temperatura > 100) {
-        cout << "por encima del punto de ebullición del agua" << endl;
-    } else {
-        cout << "por debajo del punto de ebullición del agua" << endl;
-    }
-}
-
-void ejercicio1_20_c() {
-    int numero;
-    int total_positivos = 0;
-    int total_negativos = 0;
-
-    cout << "Ejercicio 1.20.c: Ingrese un numero: ";
-    cin >> numero;
-
-    if (numero > 0) {
-        total_positivos += numero;
-    } else {
-        total_negativos += numero;
-    }
-
-    cout << "Total positivos: " << total_positivos << ", Total negativos: " << total_negativos << endl;
-}
-
-void ejercicio1_20_d() {
-    int x, y, z;
-    cout << "Ejercicio 1.20.d: Ingrese los valores de x, y, z: ";
-    cin >> x >> y >> z;
-
-    if (x > y && z < y) {
-        cout << "x es: " << x << endl;
-    }
-}
-
-void ejercicio1_20_e() {
-    int distancia;
-    cout << "Ejercicio 1.20.e: Ingrese la distancia: ";
-    cin >> distancia;
-
-    if (distancia > 20 && distancia < 35) {
-        int tiempo;
-        cout << "Ingrese un valor para la variable tiempo: ";
-        cin >> tiempo;
-        cout << "Tiempo ingresado: " << tiempo << endl;
-    }
-}
-
 int main() {
     int opcion;
 
@@ -161,17 +20,161 @@ int main() {
         cin >> opcion;
 
         switch (opcion) {
-            case 1: ejercicio1_16(); break;
-            case 2: ejercicio1_17(); break;
-            case 3: ejercicio1_18(); break;
-            case 4: ejercicio1_19(); break;
-            case 5: ejercicio1_20_a(); break;
-            case 6: ejercicio1_20_b(); break;
-            case 7: ejercicio1_20_c(); break;
-            case 8: ejercicio1_20_d(); break;
-            case 9: ejercicio1_20_e(); break;
-            case 0: cout << "Saliendo..." << endl; break;
-            default: cout << "Opción no válida. Intente de nuevo." << endl;
+            case 1: {
+                // Ejercicio 1.16
+                int A, B, C;
+                cout << "Ejercicio 1.16: Ingrese tres numeros (A, B, C): ";
+                cin >> A >> B >> C;
+
+                int mayor = A;
+                if (B > mayor) {
+                    mayor = B;
+                }
+                if (C > mayor) {
+                    mayor = C;
+                }
+
+                cout << "El numero mayor es: " << mayor << endl;
+                break;
+            }
+            case 2: {
+                // Ejercicio 1.17
+                int A, B, C;
+                cout << "Ejercicio 1.17: Ingrese tres numeros diferentes (A, B, C): ";
+                cin >> A >> B >> C;
+
+                int maximo = A;
+                int minimo = A;
+
+                if (B > maximo) {
+                    maximo = B;
+                }
+                if (C > maximo) {
+                    maximo = C;
+                }
+
+                if (B < minimo) {
+                    minimo = B;
+                }
+                if (C < minimo) {
+                    minimo = C;
+                }
+
+                cout << "El numero maximo es: " << maximo << endl;
+                cout << "El numero minimo es: " << minimo << endl;
+                break;
+            }
+            case 3: {
+                // Ejercicio 1.18
+                int HH, MM, SS;
+                cout << "Ejercicio 1.18: Ingrese la hora (HH MM SS): ";
+                cin >> HH >> MM >> SS;
+
+                SS++;
+                if (SS == 60) {
+                    SS = 0;
+                    MM++;
+                }
+                if (MM == 60) {
+                    MM = 0;
+                    HH++;
+                }
+                if (HH == 24) {
+                    HH = 0;
+                }
+
+                cout << "La hora dentro de un segundo es: " << HH << ":" << MM << ":" << SS << endl;
+                break;
+            }
+            case 4: {
+                // Ejercicio 1.19
+                float distancia;
+                int dias;
+                cout << "Ejercicio 1.19: Ingrese la distancia (km) y el numero de dias: ";
+                cin >> distancia >> dias;
+
+                float precio = distancia * 2.5;
+                if (dias > 7 && distancia > 800) {
+                    precio *= 0.7; // aplicar reducción del 30%
+                }
+
+                cout << "El precio del boleto es: $" << precio << endl;
+                break;
+            }
+            case 5: {
+                // Ejercicio 1.20.a
+                int angulo;
+                cout << "Ejercicio 1.20.a: Ingrese un angulo: ";
+                cin >> angulo;
+
+                if (angulo == 90) {
+                    cout << "El ángulo es un ángulo recto" << endl;
+                } else {
+                    cout << "El ángulo no es un ángulo recto" << endl;
+                }
+                break;
+            }
+            case 6: {
+                // Ejercicio 1.20.b
+                int temperatura;
+                cout << "Ejercicio 1.20.b: Ingrese la temperatura: ";
+                cin >> temperatura;
+
+                if (temperatura > 100) {
+                    cout << "por encima del punto de ebullición del agua" << endl;
+                } else {
+                    cout << "por debajo del punto de ebullición del agua" << endl;
+                }
+                break;
+            }
+            case 7: {
+                // Ejercicio 1.20.c
+                int numero;
+                int total_positivos = 0;
+                int total_negativos = 0;
+
+                cout << "Ejercicio 1.20.c: Ingrese un numero: ";
+                cin >> numero;
+
+                if (numero > 0) {
+                    total_positivos += numero;
+                } else {
+                    total_negativos += numero;
+                }
+
+                cout << "Total positivos: " << total_positivos << ", Total negativos: " << total_negativos << endl;
+                break;
+            }
+            case 8: {
+                // Ejercicio 1.20.d
+                int x, y, z;
+                cout << "Ejercicio 1.20.d: Ingrese los valores de x, y, z: ";
+                cin >> x >> y >> z;
+
+                if (x > y && z < y) {
+                    cout << "x es: " << x << endl;
+                }
+                break;
+            }
+            case 9: {
+                // Ejercicio 1.20.e
+                int distancia;
+                cout << "Ejercicio 1.20.e: Ingrese la distancia: ";
+                cin >> distancia;
+
+                if (distancia > 20 && distancia < 35) {
+                    int tiempo;
+                    cout << "Ingrese un valor para la variable tiempo: ";
+                    cin >> tiempo;
+                    cout << "Tiempo ingresado: " << tiempo << endl;
+                }
+                break;
+            }
+            case 0:
+                cout << "Saliendo..." << endl;
+                break;
+            default:
+                cout << "Opción no válida. Intente de nuevo." << endl;
         }
     } while (opcion != 0);
 
